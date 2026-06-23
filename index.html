@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional galaxy-themed portfolio of M Reshmi Dhavamani, B.Sc. Artificial Intelligence and Data Science (AIDS) student at RD National College of Arts and Science. Discover achievements, education, and skills.">
+    <meta name="keywords" content="M Reshmi Dhavamani, Reshmi Dhavamani, Portfolio, B.Sc. AIDS, Artificial Intelligence, Data Science, RD National College of Arts and Science, 10th mark, 12th mark">
+    <meta name="author" content="M Reshmi Dhavamani">
+    <title>M Reshmi Dhavamani | B.Sc. AIDS Portfolio</title>
+    
+    <!-- Google Fonts: Orbitron (futuristic) & Plus Jakarta Sans (premium sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons for premium visual cues -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+    <!-- Background Canvas for Space Starfield Effect -->
+    <canvas id="galaxy-bg"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home" class="logo-text"><span class="accent-glow">Reshmi</span><span class="dot">.</span></a>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+                <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle" id="theme-toggle" title="Toggle Celestial Theme">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="welcome-text reveal-anim">GREETINGS, COSMIC VOYAGER</span>
+                <h1 class="hero-title reveal-anim">I am <span class="gradient-text text-glow">M Reshmi Dhavamani</span></h1>
+                <h2 class="hero-tagline reveal-anim">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description reveal-anim">
+                    Venture into the orbit of Artificial Intelligence & Data Science with me. I'm a student at RD National College of Arts & Science, driven by curiosity to decode data, model intelligence, and chart new digital horizons.
+                </p>
+                <div class="hero-buttons reveal-anim">
+                    <a href="#education" class="btn btn-primary"><span class="btn-text">Academic Orbit</span><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary"><span class="btn-text">Connect Info</span></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-anim">
+                <div class="constellation-graphic">
+                    <div class="center-star"></div>
+                    <div class="orbit orbit-1"><div class="planet planet-1"></div></div>
+                    <div class="orbit orbit-2"><div class="planet planet-2"></div></div>
+                    <div class="orbit orbit-3"><div class="planet planet-3"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">MISSION DIRECTORY</span>
+                    <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> Astronaut Profile</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="profile-frame">
+                            <div class="glowing-border"></div>
+                            <!-- A stylized profile graphic or placeholder icon until customizable -->
+                            <div class="profile-avatar">
+                                <i class="fa-solid fa-user-shield avatar-icon"></i>
+                            </div>
+                        </div>
+                        <div class="meta-info">
+                            <h3>M Reshmi Dhavamani</h3>
+                            <p class="role-badge">AI & Data Science Pioneer</p>
+                            <div class="meta-list">
+                                <div class="meta-item">
+                                    <i class="fa-solid fa-cake-candles icon-glow"></i>
+                                    <div>
+                                        <span>Stardate (Birthday)</span>
+                                        <strong>30.05.2009</strong>
+                                    </div>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fa-solid fa-earth-asia icon-glow"></i>
+                                    <div>
+                                        <span>Origin</span>
+                                        <strong>Tamil Nadu, India</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-bio glass-card">
+                        <h3>Analyzing the Path Ahead</h3>
+                        <p>
+                            Having recently completed my 12th grade with high achievements, I embarked on a journey to explore the infinite possibilities of technology. I am currently pursuing my <strong>B.Sc. in Artificial Intelligence and Data Science (AIDS)</strong> at <strong>RD National College of Arts and Science</strong>.
+                        </p>
+                        <p>
+                            While I am currently a newcomer to the programming universe, I have a deep interest in software development and intelligent engineering. I am eager to build strong foundations, learn new frameworks, and grow my skills to map pathways through the digital cosmos.
+                        </p>
+                        <p>
+                            Whether it's dissecting computational models in my college classes, exploring software logic, or crafting clean web experiences like this portfolio, I am excited to chart my trajectory in tech.
+                        </p>
+                        <div class="quote-box">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>Coding is a vast universe, and I am excited to build the paths to explore it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">GALACTIC MILESTONES</span>
+                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Academic Milestones</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="education-dashboard">
+                    <!-- Current Pursuit Card -->
+                    <div class="education-main glass-card">
+                        <div class="pulse-beacon-container">
+                            <span class="pulse-beacon"></span>
+                            <span class="status-tag">ACTIVE ORBIT</span>
+                        </div>
+                        <h3>B.Sc. Artificial Intelligence & Data Science</h3>
+                        <h4 class="college-title">RD National College of Arts and Science</h4>
+                        <p class="duration">Started 2026</p>
+                        <p class="description">
+                            Engaged in an advanced curriculum centered around computational thinking, machine learning, data engineering, statistical modeling, database systems, and software engineering methodologies.
+                        </p>
+                        <ul class="education-highlights">
+                            <li><i class="fa-solid fa-satellite-dish icon-glow"></i> Understanding algorithmic intelligence</li>
+                            <li><i class="fa-solid fa-database icon-glow"></i> Architecting structured & unstructured data repositories</li>
+                            <li><i class="fa-solid fa-chart-line icon-glow"></i> Statistical forecasting & mathematical analysis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Metrics / Grades Subgrid -->
+                    <div class="education-metrics">
+                        <!-- 10th Grade Metric Card -->
+                        <div class="metric-card glass-card">
+                            <div class="radial-progress-wrapper">
+                                <svg class="radial-progress-svg" viewBox="0 0 120 120">
+                                    <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="circle-fill circle-10th" cx="60" cy="60" r="50" style="stroke-dashoffset: 18.2;"></circle>
+                                </svg>
+                                <div class="metric-value">
+                                    <span class="value-number">94.2%</span>
+                                </div>
+                            </div>
+                            <div class="metric-info">
+                                <h3>Secondary Education (10th)</h3>
+                                <p class="marks">Grade Achievement: <span class="score-highlight">471 / 500</span></p>
+                                <p class="metric-desc">Demonstrated strong foundations in Science, Mathematics, and Analytical concepts, securing a high-distinction percentage.</p>
+                            </div>
+                        </div>
+
+                        <!-- 12th Grade Metric Card -->
+                        <div class="metric-card glass-card">
+                            <div class="radial-progress-wrapper">
+                                <svg class="radial-progress-svg" viewBox="0 0 120 120">
+                                    <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="circle-fill circle-12th" cx="60" cy="60" r="50" style="stroke-dashoffset: 69;"></circle>
+                                </svg>
+                                <div class="metric-value">
+                                    <span class="value-number">78.0%</span>
+                                </div>
+                            </div>
+                            <div class="metric-info">
+                                <h3>Higher Secondary (12th)</h3>
+                                <p class="marks">Grade Achievement: <span class="score-highlight">468 / 600</span></p>
+                                <p class="metric-desc">Successfully completed pre-university qualifications with specialization laying the groundwork for complex analytical degree studies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">LAUNCH SIGNAL</span>
+                    <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Initiate Transmission</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Connect with Me</h3>
+                        <p>Feel free to reach out to inquire about my studies, discuss collaborative academic projects, or simply say hello!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span>Signal Email</span>
+                                    <strong>reshmidhavamani@gmail.com</strong>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span>Academic Base</span>
+                                    <strong>RD National College of Arts & Science, India</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-orbits">
+                            <a href="https://www.linkedin.com/in/reshmidhavamani/" target="_blank" rel="noopener noreferrer" class="social-link-orb" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/reshmidhavamani" target="_blank" rel="noopener noreferrer" class="social-link-orb" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/reshmi_.07/" target="_blank" rel="noopener noreferrer" class="social-link-orb" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter explorer name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter communication channel">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Transmission Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Type your message to the nebula..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-btn">
+                                <span class="btn-text">Send Transmission</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="form-status" class="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 ReshmiDhavamani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js?v=6"></script>
+</body>
+</html>
